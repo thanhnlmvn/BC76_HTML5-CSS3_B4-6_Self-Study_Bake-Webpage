@@ -1,0 +1,124 @@
+/* GLOBAL CSS */
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  /* font-style: 18px; */
+  /* 1rem = 18px */
+
+  /* Không khai báo fs */
+  /* mặc định là 16px */
+  /* => 1rem = 16 */
+  font-size: 16px;
+
+  /* letter-spacing -> điều chỉnh khoản cách ký tự nội dung */
+  letter-spacing: 1px;
+  color: #212529;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  padding: 13px 32px;
+  color: white;
+  background-color: #ff0e83;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+
+  /* cursor điều chỉnh khi chuột để vào sẽ thay đổi trạng thái ở đây sử dụng giá trị pointer sẽ có hình bàn tay click */
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* HEADER CSS */
+header {
+  background-color: #4e2a84;
+  padding: 16px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__content a {
+  font-size: 2.3rem;
+  color: white;
+
+  /* trasition giúp set lại thời gian hover để người dùng có thể thấy */
+  transition: all 0.5s linear;
+}
+
+/* hover giúp người dùng khi di chuột vào sẽ thay đổi thuộc tính css  */
+.header__content a:hover,
+.header__content .active {
+  color: #ff0e83;
+}
+
+.header__content nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.header__content li a {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* CAROUSEL CSS */
+.carousel {
+  background-image: url(./../img/b3.jpg);
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__content h1 {
+  font-size: 3.5rem;
+}
+
+.carousel__content p {
+  font-size: 1.1rem;
+  padding: 23px 0;
+}
+
+.carousel__content .button:hover {
+  background-color: white;
+  border-color: #ff0e83;
+  color: black;
+}
